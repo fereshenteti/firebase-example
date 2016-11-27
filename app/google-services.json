@@ -1,20 +1,32 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "608097786530",
     "firebase_url": "https://devfest-d22c6.firebaseio.com",
     "project_id": "devfest-d22c6",
     "storage_bucket": "devfest-d22c6.appspot.com"
+=======
+    "project_number": "702464033347",
+    "firebase_url": "https://qresto-dea77.firebaseio.com",
+    "project_id": "qresto-dea77",
+    "storage_bucket": "qresto-dea77.appspot.com"
+>>>>>>> e2fa611ed364d878f504fea8786096c5abab6d5f
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:608097786530:android:7a63ef8a0470ee57",
+=======
+        "mobilesdk_app_id": "1:702464033347:android:7a63ef8a0470ee57",
+>>>>>>> e2fa611ed364d878f504fea8786096c5abab6d5f
         "android_client_info": {
           "package_name": "android.zygotekillers.feres.devfest"
         }
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
           "client_id": "608097786530-qqtihuqei7dkcjjpl895hap8bfdl2t2h.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -24,12 +36,27 @@
         },
         {
           "client_id": "608097786530-5c4li3p9sdd0riccquasaa32i6cpa0mj.apps.googleusercontent.com",
+=======
+          "client_id": "702464033347-sh4rh99bk2j4ovbi5o5pjf2huk9khmb9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.zygotekillers.feres.devfest",
+            "certificate_hash": "8D3388DF8A1E833779532A64C1950C0B630A8F14"
+          }
+        },
+        {
+          "client_id": "702464033347-sdtnqtl7mjfkerg0qj7chnatuq74a6sk.apps.googleusercontent.com",
+>>>>>>> e2fa611ed364d878f504fea8786096c5abab6d5f
           "client_type": 3
         }
       ],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyBUKo0eTFm9oHjMFdq6ctu955H-WNratuo"
+=======
+          "current_key": "AIzaSyC3IqxQcQLMg4Bl0RMtUR0ALoHX0nVM9eM"
+>>>>>>> e2fa611ed364d878f504fea8786096c5abab6d5f
         }
       ],
       "services": {
@@ -40,7 +67,11 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
+<<<<<<< HEAD
               "client_id": "608097786530-5c4li3p9sdd0riccquasaa32i6cpa0mj.apps.googleusercontent.com",
+=======
+              "client_id": "702464033347-sdtnqtl7mjfkerg0qj7chnatuq74a6sk.apps.googleusercontent.com",
+>>>>>>> e2fa611ed364d878f504fea8786096c5abab6d5f
               "client_type": 3
             }
           ]
