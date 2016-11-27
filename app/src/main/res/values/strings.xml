@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Devfest</string>
     <string name="action_settings">Settings</string>
+    <!--<string name="default_web_client_id">702464033347-sdtnqtl7mjfkerg0qj7chnatuq74a6sk.apps.googleusercontent.com</string>-->
 </resources>

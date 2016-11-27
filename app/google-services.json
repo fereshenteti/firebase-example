@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "702464033347",
+    "firebase_url": "https://qresto-dea77.firebaseio.com",
+    "project_id": "qresto-dea77",
+    "storage_bucket": "qresto-dea77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702464033347:android:7a63ef8a0470ee57",
+        "android_client_info": {
+          "package_name": "android.zygotekillers.feres.devfest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702464033347-sh4rh99bk2j4ovbi5o5pjf2huk9khmb9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.zygotekillers.feres.devfest",
+            "certificate_hash": "8D3388DF8A1E833779532A64C1950C0B630A8F14"
+          }
+        },
+        {
+          "client_id": "702464033347-sdtnqtl7mjfkerg0qj7chnatuq74a6sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3IqxQcQLMg4Bl0RMtUR0ALoHX0nVM9eM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702464033347-sdtnqtl7mjfkerg0qj7chnatuq74a6sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
