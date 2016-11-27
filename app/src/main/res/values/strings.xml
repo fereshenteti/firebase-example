@@ -1,12 +1,9 @@
 <resources>
     <string name="app_name">QResto DevFest</string>
     <string name="action_settings">Settings</string>
-<<<<<<< HEAD
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_bookmark">My Bill</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
-=======
-    <!--<string name="default_web_client_id">702464033347-sdtnqtl7mjfkerg0qj7chnatuq74a6sk.apps.googleusercontent.com</string>-->
->>>>>>> e2fa611ed364d878f504fea8786096c5abab6d5f
+
 </resources>
