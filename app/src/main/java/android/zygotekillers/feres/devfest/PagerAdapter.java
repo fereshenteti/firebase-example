@@ -1,46 +1,45 @@
 package android.zygotekillers.feres.devfest;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
 /**
- * Created by feres on 27/11/2016.
+ * Created by djamiirr on 27/11/16.
  */
 
-public class PagerAdapter extends FragmentPagerAdapter {
+public class PagerAdapter extends FragmentStatePagerAdapter {
 
-    private final List<Fragment> myFragments = new ArrayList<>();
-    private final List<String> myFragmentTitles = new ArrayList<>();
-    private Context context;
+    int mNumOfTabs;
 
-    public PagerAdapter(FragmentManager fm, Context context) {
+    public PagerAdapter(FragmentManager fm, int NumOfTabs) {
         super(fm);
-        this.context = context;
-    }
-
-    public void addFragment(Fragment fragment, String title) {
-        myFragments.add(fragment);
-        myFragmentTitles.add(title);
+        this.mNumOfTabs = NumOfTabs;
     }
 
     @Override
     public Fragment getItem(int position) {
-        return myFragments.get(position);
+
+        switch (position) {
+            case 0:
+                TabFragment1 tab1 = new TabFragment1();
+                return tab1;
+            case 1:
+                TabFragment2 tab2 = new TabFragment2();
+                return tab2;
+            case 2:
+                TabFragment3 tab3 = new TabFragment3();
+                return tab3;
+            default:
+                return null;
+        }
     }
 
     @Override
     public int getCount() {
-        return myFragments.size();
+        return mNumOfTabs;
     }
-
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return myFragmentTitles.get(position);
-    }
-
 }
+
+
+

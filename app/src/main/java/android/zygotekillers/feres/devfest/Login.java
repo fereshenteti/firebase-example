@@ -1,5 +1,6 @@
 package android.zygotekillers.feres.devfest;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,6 +39,9 @@ public class Login extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
+                   try{ startActivity(new Intent(Login.this,MainActivity.class));}catch(Exception e){
+                       Log.e("Error type:  ",e.getMessage());
+                   }
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                     Toast.makeText(Login.this, "Signed in :)", Toast.LENGTH_SHORT).show();
                 } else {
