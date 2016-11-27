@@ -6,14 +6,6 @@
     android:orientation="horizontal">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/title_txtView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:text="Hello feres" />
-
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/messages_list"
@@ -24,5 +16,6 @@
         android:padding="5dp"
         android:scrollbars="vertical"
         tools:listitem="@layout/item_post" />
+
 
 </LinearLayout>

@@ -45,8 +45,8 @@ public class ContentFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View myView = inflater.inflate(R.layout.fragment_content, container, false);
-        titleTxtView = (TextView)myView.findViewById(R.id.title_txtView);
-        titleTxtView.setText(mParam1);
+        //titleTxtView = (TextView)myView.findViewById(R.id.title_txtView);
+        //titleTxtView.setText(mParam1);
         return myView;
     }
 
