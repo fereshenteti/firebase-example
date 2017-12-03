@@ -1,5 +1,6 @@
 package android.zygotekillers.feres.devfest;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,6 +39,9 @@ public class Login extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
+                   try{ startActivity(new Intent(Login.this,MainActivity.class));}catch(Exception e){
+                       Log.e("Error type:  ",e.getMessage());
+                   }
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                     Toast.makeText(Login.this, "Signed in :)", Toast.LENGTH_SHORT).show();
                 } else {
@@ -46,33 +50,40 @@ public class Login extends AppCompatActivity {
                 }
             }
         };
+
+
+
+        mAuth.signInAnonymously()
+                .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Log.d(TAG, "signInAnonymously:onComplete:" + task.isSuccessful());
+
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
+                        if (!task.isSuccessful()) {
+                            Log.w(TAG, "signInAnonymously", task.getException());
+                            Toast.makeText(Login.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                        }else   {
+                            Toast.makeText(Login.this, "Connected", Toast.LENGTH_SHORT).show();
+                            testDB();
+                        }
+
+
+                        // ...
+                    }
+                });
+
+
+        /*
         sign=(Button)findViewById(R.id.sign_in_button);
         try{
         sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mAuth.signInAnonymously()
-                        .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                Log.d(TAG, "signInAnonymously:onComplete:" + task.isSuccessful());
 
-                                // If sign in fails, display a message to the user. If sign in succeeds
-                                // the auth state listener will be notified and logic to handle the
-                                // signed in user can be handled in the listener.
-                                if (!task.isSuccessful()) {
-                                    Log.w(TAG, "signInAnonymously", task.getException());
-                                    Toast.makeText(Login.this, "Authentication failed.",
-                                            Toast.LENGTH_SHORT).show();
-                                }else   {
-                                    Toast.makeText(Login.this, "Connected", Toast.LENGTH_SHORT).show();
-                                    testDB();
-                                }
-
-
-                                // ...
-                            }
-                        });
 
             }
         });}catch(Exception e){
@@ -80,7 +91,7 @@ public class Login extends AppCompatActivity {
             Log.e("Error type crash:  ",e.getMessage());
         }
 
-
+        */
 
     }
 

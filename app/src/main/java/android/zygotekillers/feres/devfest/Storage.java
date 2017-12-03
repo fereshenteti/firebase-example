@@ -12,6 +12,6 @@ public class Storage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_storage);
         FirebaseStorage storage = FirebaseStorage.getInstance();
-        
+
     }
 }
